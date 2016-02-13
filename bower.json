@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "description": "portfolio website",
+  "main": "home.html",
+  "moduleType": [],
+  "authors": [
+    "Daniel Williams"
+  ],
+  "license": "MIT",
+  "homepage": "home.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.1"
+  }
+}
