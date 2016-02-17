@@ -1,38 +1,65 @@
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test</title>
-  <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+  <!-- <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css"> -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.blue-yellow.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout-icon"></div>
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout__title">Template Layout</span>
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation">
-          <a href="#" class="mdl-navigation__link">link1</a>
-          <a href="#" class="mdl-navigation__link">link2</a>
-          <a href="#" class="mdl-navigation__link">link3</a>
-        </nav>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h3>Daniel Williams</h3>
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+        <a href="#skills" class="mdl-layout__tab">Skills</a>
+        <a href="#contact" class="mdl-layout__tab">Contact</a>
       </div>
     </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout__title">Template Layout</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#">Nav link 2</a>
-        <a class="mdl-navigation__link" href="#">Nav link 2</a>
-        <a class="mdl-navigation__link" href="#">Nav link 3</a>
-      </nav>
-    </div>
     <main class="mdl-layout__content">
-      <section class="section--center mdl-grid mdl-shadow--2dp">
-        <div class="mdl-cell mdl-cell--4-col">Content</div>
-        <div class="mdl-cell mdl-cell--4-col">goes</div>
-        <div class="mdl-cell mdl-cell--4-col">here</div>
-      </section>
+      <div class="mdl-layout__tab-panel is-active" id="overview">
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone">
+            <img src="danny.jpg"/>
+          </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__supporting-text">
+              <h4> About me </h4>
+              My name is Daniel Williams, I am a recent graduate of computer science. I am currently a ruby on rails developer.
+            </div>
+            <div class="mdl-card__actions">
+              <a href="#" class="mdl-button"> Read more </a>
+            </div>
+          </div>
+        </section>
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>Skills summary</h4>
+              <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Ruby On Rails</li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions">
+              <a href="#" class="mdl-button">More details</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="mdl-layout__tab-panel" id="skills">
+      </div>
+      <div class="mdl-layout__tab-panel" id="contact">
+      </div>
     </main>
   </div>
   <script src="bower_components/material-design-lite/material.min.js"></script>
