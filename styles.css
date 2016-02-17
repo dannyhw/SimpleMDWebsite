@@ -20,7 +20,7 @@ html, body {
   padding: 0;
 }
 .mdl-layout__header-row {
-  max-height: 40px;
+  max-height: 20px;
   padding-left: 40px;
 }
 .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
