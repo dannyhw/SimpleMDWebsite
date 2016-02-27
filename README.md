@@ -1,5 +1,5 @@
 # SimpleMDWebsite
-A website using simple design
+A website using simple material design
 
 # About
 Learning to use simple material design and creating a simple template website
