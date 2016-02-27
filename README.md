@@ -10,3 +10,12 @@ This project uses bower so the extra technologies other than html are included i
 get mdl here:
 https://www.getmdl.io
 https://github.com/google/material-design-lite
+
+# Setup:
+First make sure you have npm and bower installed then run the following command in the terminal from the SimpleMDWebsite directory
+```
+bower install
+python3 -m http.server
+```
+
+Then go to http://localhost:8000 (default python http server)
