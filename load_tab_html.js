@@ -4,12 +4,10 @@ $(function(){
      url_length = cur_url.length;
      if (cur_url[url_length -1] != '/'){
        cur_url = cur_url + '/';
-       start = url_length - 9; end = url_length;
-       sub = cur_url.substring(start, end);
-       if (sub == "home.html" ){
-         new_url = cur_url.substring(0,start);
+       if (cur_url.indexOf("home.html") > -1 ){
+         end = cur_url.indexOf("home.html");
+         new_url = cur_url.substring(0,end);
        }
-      //  alert(sub + " " + url_length + " " + cur_url + " " + new_url)
      }
      $("#overview").load(new_url+"overview.html");
      $("#skills").load(new_url+"skills.html");
