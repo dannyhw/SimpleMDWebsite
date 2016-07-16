@@ -208,3 +208,10 @@ section.section--center .section__text:not(:last-child) {
 .mdl-menu__container {
   z-index: 99;
 }
+
+a {
+  color: rgba(0,188,212,1);
+}
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after{
+  background: rgba(49, 70, 179, 0.99);
+}
