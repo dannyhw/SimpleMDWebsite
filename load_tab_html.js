@@ -1,5 +1,6 @@
 $(function(){
-     $("#overview").load("http://localhost:8000/overview.html");
-     $("#skills").load("http://localhost:8000/skills.html");
-     $("#contact").load("http://localhost:8000/contact.html");
+     cur_url = window.location.href
+     $("#overview").load(cur_url+"overview.html");
+     $("#skills").load(cur_url+"skills.html");
+     $("#contact").load(cur_url+"contact.html");
 });
